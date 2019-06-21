@@ -81,7 +81,7 @@ def windowsCommandsToScript():
  windowscommands.write('\n')
  windowscommands.write('netstat -an >> %filename%')
  windowscommands.write('\n')
- windowscommands.write('xcopy /I /F .\\%filename% \\\\10.9.10.38\\ADMIN$\..' + (pwd) + '\\Results\\%filename%')
+ windowscommands.write('xcopy /I /F .\\%filename% \\\\' + (ip_addr) + '\\ADMIN$\..' + (pwd) + '\\Results\\%filename%')
  
 def linuxCommands():
  command1 = "pscp -pw " + (linuxpassword) + " .\\linuxcommands.sh " + (linuxuser) + "@" + (hostip) + ":/home"
@@ -109,6 +109,7 @@ def windowsCommands():
 #######################################################################
 #Netinput = input('What is the network ID of the network you want to scan?(ie. 192.168.1.0): ')
 #cidrinput = input('What is the CIDR of the network you want to scan?(ie. /24) hit enter if single host: ')
+ip_addr = input('What is the IP address of the machine you are scanning from?')
 linuxuser = input('What is the Linux user that will be used for enumeration?: ')
 linuxpassword = input('What is the Linux password used to authenticate the user above?: ')
 windowsuser = input('What is the Windows user that will be used for enumeration? Domain user should look like; domain.com\\user: ')
