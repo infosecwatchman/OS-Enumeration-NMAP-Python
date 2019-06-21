@@ -2,6 +2,3 @@
 Nmap scan report for 10.9.10.38
 Nmap scan report for 10.9.10.45
 Nmap scan report for 10.9.11.10
-Host: 10.9.10.38 (w-hqb3fn-kkr.scspa.local)	Status: Up
-Host: 10.9.10.45 (w-hqb3fn-kkr.scspa.local)	Status: Up
-Host: 10.9.11.10 (w-hqb3fn-kkr.scspa.local)	Status: Up
